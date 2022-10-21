@@ -2,28 +2,28 @@ import { useEffect } from 'react'
 import './style.css'
 
 export function Suggestion() {
-    
+
     const [suggestions, setSuggestions] = useState([])
 
-        const [limitUsers, setLimitUsers] = useState(5)
-    
-        const slice = suggestions.slice(0, limitUsers)
-    
-        useEffect(() => {
-            fetch(`https://api.github.com/users/gabrieldiasss/followers`)
+    const [limitUsers, setLimitUsers] = useState(5)
+
+    const slice = suggestions.slice(0, limitUsers)
+
+    useEffect(() => {
+        fetch(`https://api.github.com/users/gabrieldiasss/followers`)
             .then((response) => {
                 return response.json()
             })
             .then((result) => {
                 setSuggestions(result)
             })
-    
+
             .catch((err) => {
                 throw new Error(err)
             })
-    
-        }, [])
-    
+
+    }, [])
+
     return (
 
         <div className="container-suggestion">
@@ -46,6 +46,19 @@ export function Suggestion() {
             </div>
 
             <div className="user-suggestion">
+                {slice.map((suggestion, key) => (
+
+                    <div className="infos-suggestion" key={key}>
+
+                        <img src={"https://avatars.githubusercontent.com/u/72942750?v=4${suggestion.login}"} />
+
+                        <div className="info-suggestion">
+                            <span>{suggestion.login}</span>
+                            <p>Seguido por filipechamps</p>
+                        </div>
+                        <button className="follow">Seguir</button>
+                    </div>
+                ))}
 
                 <div className="infos-suggestion">
 
