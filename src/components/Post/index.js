@@ -1,30 +1,32 @@
-import './style.css'
-import { FiMoreHorizontal } from 'react-icons/fi'
-import { IoMdHeartEmpty } from 'react-icons/io'
-import { BsChat, BsBookmark, BsEmojiSmile } from 'react-icons/bs'
-import { FiSend } from 'react-icons/fi'
-import { IconContext } from 'react-icons'
+import React from 'react';
+/* eslint-disable */
+import './style.css';
+import { FiMoreHorizontal } from 'react-icons/fi';
+import { IoMdHeartEmpty } from 'react-icons/io';
+import { BsChat, BsBookmark, BsEmojiSmile } from 'react-icons/bs';
+import { FiSend } from 'react-icons/fi';
+import { IconContext } from 'react-icons';
 
 
-export function Post() {
+export default function Post() {
     return (
-        <>
+        <div>
             <header className="header-post">
                 <div className="infos-post">
-                    <img className="img-header-post" src="https://lh3.googleusercontent.com/p/AF1QipMLn7_Sg5E9y0W0saGChj6fXsvynd9doV-zOKEB=w1080-h608-p-no-v0" />
+                    <img className="img-header-post" src="https://scontent.fcgh5-1.fna.fbcdn.net/v/t1.6435-9/175152005_141499104648573_1559391934785923861_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MRDaFSJmRxcAX8FWNZE&_nc_ht=scontent.fcgh5-1.fna&oh=00_AT9Zl5jvj-Cvc1EXNhyPsRqcaqjVJNdEV004WZz2bWk3jg&oe=637DCCD8" />
 
-                    <p><b>FelisssPcs</b></p>
+                    <p>felissspcs</p>
                 </div>
                 <FiMoreHorizontal />
             </header>
 
             <div className="img-post">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWl5LakkRmLFHVKWvWRgNRCJoYURKK4C-A-6slTPK_aHpXQnftJqut7uU8zvxewFvh30I&usqp=CAU" />
+                <img src="https://scontent.fcgh4-1.fna.fbcdn.net/v/t1.6435-9/186558330_166539028811247_843523463825112646_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=iYe8nerjjHAAX8zsCgC&_nc_ht=scontent.fcgh4-1.fna&oh=00_AT-LcUBVfaaWncIrSM0bUnVHsNvztE-v4aB0smZIAxJ2CA&oe=6377A3CF" />
 
             </div>
 
             <div className="footer-post">
-                <IconContext.Provider value={{ size: "30px" }}>
+                <IconContext.Provider value={{ size: "26px" }}>
 
                     <section className="engagement-post">
                         <div className="icons-1">
@@ -43,7 +45,7 @@ export function Post() {
 
                 <div className="legend">
                     <p>
-                        <span>FelisssPcs</span> Traga seu celular para fazermos um orçamento sem compromisso para você.
+                        <span>felissspcs</span> Traga seu celular para fazermos um orçamento sem compromisso para você.
                     </p>
                 </div>
 
@@ -71,11 +73,12 @@ export function Post() {
 
             {/*  */}
 
+
             <header className="header-post">
                 <div className="infos-post">
                     <img className="img-header-post" src="https://avatars.githubusercontent.com/u/72942750?v=4" />
 
-                    <p><b>Carmosz_</b></p>
+                    <p>carmosz_</p>
                 </div>
                 <FiMoreHorizontal />
             </header>
@@ -86,7 +89,7 @@ export function Post() {
             </div>
 
             <div className="footer-post">
-                <IconContext.Provider value={{ size: "30px" }}>
+                <IconContext.Provider value={{ size: "26px" }}>
 
                     <section className="engagement-post">
                         <div className="icons-1">
@@ -105,7 +108,7 @@ export function Post() {
 
                 <div className="legend">
                     <p>
-                        <span>Carmosz_</span> Hello World!
+                        <span>carmosz_</span> Hello World!
                     </p>
                 </div>
 
@@ -126,9 +129,9 @@ export function Post() {
 
                     </div>
                     <button>Publicar</button>
-
                 </div>
+                </div>
+
             </div>
-        </>
-    )
+            )
 }

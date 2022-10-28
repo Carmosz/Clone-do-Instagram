@@ -1,12 +1,14 @@
-import { AiOutlineSearch, AiFillHome } from 'react-icons/ai'
-import { RiMessengerLine } from 'react-icons/ri'
-import { MdOutlineExplore } from 'react-icons/md'
-import { FiHeart, FiPlusSquare } from 'react-icons/fi'
+import React from 'react';
+/* eslint-disable */
+import { AiOutlineSearch, AiFillHome } from 'react-icons/ai';
+import { RiMessengerLine } from 'react-icons/ri';
+import { MdOutlineExplore } from 'react-icons/md';
+import { FiHeart, FiPlusSquare } from 'react-icons/fi';
 import { IconContext } from 'react-icons';
 
 import './style.css'
 
-export function Header() {
+export default function Header() {
 
     return (
         <header className="header">
@@ -48,5 +50,5 @@ export function Header() {
 
 
         </header>
-    )
+    );
 }

@@ -25,13 +25,11 @@
 }
 
 .input-fake {
-    background: var(--background-main);
-    border-radius: 3px;
-
+    background: #efeeee;
+    border-radius: 8px;
+    height: 100%;
     padding: 3px 10px;
-
-    border: 1px solid var(--border);
-
+    border: 0;
     display: flex;
     align-items: center;
 }

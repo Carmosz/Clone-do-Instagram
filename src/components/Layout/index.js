@@ -1,12 +1,14 @@
-import './style.css'
+import React from 'react';
+/* eslint-disable */
+import './style.css';
 
-import { Story } from '../Story'
-import { Post } from '../Post'
-import { Suggestion } from '../Suggestion'
+import { Story } from '../Story';
+import { Post } from '../Post';
+import { Suggestion } from '../Suggestion';
 
-export function Layout() {
+export default function Layout() {
     return (
-        <>
+        <div>
 
             <div className="mainGrid">
 
@@ -29,6 +31,6 @@ export function Layout() {
                 
             </div>
 
-        </>
-    )
+        </div>
+    );
 }

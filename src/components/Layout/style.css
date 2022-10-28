@@ -1,4 +1,3 @@
-
 .mainGrid {
     display: grid;
 
@@ -16,10 +15,15 @@
 .box {
     background: var(--background);
     border: 1px solid var(--border);
+    border-radius: 8px;
+    max-width: 470px;
+    width: 100%;
 }
 
 .suggestionBox {
     flex: 1;
     position: fixed;
-    max-width: 293px;
+    max-width: 319px;
+    width: 100%;
+    left: 751px;
 }
