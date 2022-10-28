@@ -15,7 +15,7 @@ export default function Header() {
 
             <div className="container">
 
-                <img className='logo' src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></img>
+                <img className='logo' src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
 
                 <div className="input-fake">
                     <IconContext.Provider value={{ color: "#8e8e8e" }}>

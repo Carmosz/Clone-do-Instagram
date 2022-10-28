@@ -8,8 +8,8 @@ import './styles/global.css';
 function App() {
   return (
     <div>
-      <Header />
-      <Layout />
+     <p>hello</p>
+     <Header />
     </div>
   );
 }
